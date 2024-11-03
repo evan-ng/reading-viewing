@@ -1,0 +1,9 @@
+[package]
+name = "word"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+env_logger = { version = "0.10", default-features = false }
+opencv = "0.93.3"
