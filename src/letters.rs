@@ -20,7 +20,6 @@ impl Letters {
         let mut letter_imgs: [Mat; NUM_IMG] = Default::default();
 
         let str = read_to_string("assets/data.json").unwrap();
-        print!("{}\n", str);
         let json: serde_json::Value = serde_json::from_str(&str).expect("JSON was not well-formatted");
 
         let letter_averages = json["letters"].as_array().expect("JSON is incorrect type (letters is not array)");
